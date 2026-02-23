@@ -53,6 +53,8 @@ pip install ultralytics opencv-python
 #### 1. Клонування репозиторію
 ```bash
 git clone [https://github.com/kloktadanyil/yolov8-object-detection.git](https://github.com/kloktadanyil/yolov8-object-detection.git)
+```
+```bash
 cd yolov8-object-detection
 ```
 #### 2. Встановлення залежностей
