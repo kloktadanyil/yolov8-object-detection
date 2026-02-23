@@ -38,7 +38,7 @@ pip install ultralytics
 ```
 ### 3. Запуск розпізнавання 
 Створіть файл main.py та вставте туди цей код, щоб запустити детекцію на вашому відео або через веб-камеру:
-```pyhton
+```python
 from ultralytics import YOLO
 
 # Завантаження натренованої моделі
@@ -49,7 +49,6 @@ model = YOLO("best.pt")
 
 # Варіант 2: Запуск через веб-камеру (0 - ID камери)
 model.predict(source=0, show=True, conf=0.5)
-
 
 # yolov8-object-detection
 Object detection pipeline using YOLOv8 and Roboflow. Includes training notebooks and inference scripts.
