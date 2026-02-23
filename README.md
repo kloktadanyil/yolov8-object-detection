@@ -65,11 +65,8 @@ from ultralytics import YOLO
 # Завантаження натренованої моделі
 model = YOLO("best.pt")
 
-# Варіант 1: Запуск на відеофайлі
-# model.predict(source="path/to/your/video.mp4", show=True, conf=0.5)
-
-# Варіант 2: Запуск через веб-камеру (0 - ID камери)
-model.predict(source=0, show=True, conf=0.5)
+# Запуск на відеофайлі
+model.predict(source="path/to/your/video.mp4", show=True, conf=0.5)
 ```
 
 # yolov8-object-detection
