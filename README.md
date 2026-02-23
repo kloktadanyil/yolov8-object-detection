@@ -28,7 +28,7 @@
 
 Щоб переконатися, що модель працює правильно, ви можете використати моє тестове відео.
 
-1. **Завантажте тестове відео:** 📥 **[Завантажити video_test.mp4]([ПОСИЛАННЯ_НА_ТВОЄ_ВІДЕО](https://youtube.com/shorts/WpaYRwc7CQA))** *(Збережіть його в папку з проєктом)*
+1. **Завантажте тестове відео:** 📥 **[Завантажити video_test.mp4](https://youtube.com/shorts/WpaYRwc7CQA))** *(Збережіть його в папку з проєктом)*
 #### 1. Клонування репозиторію
 ```bash
 git clone [https://github.com/kloktadanyil/yolov8-object-detection.git](https://github.com/kloktadanyil/yolov8-object-detection.git)
