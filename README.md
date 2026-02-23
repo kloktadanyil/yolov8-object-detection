@@ -1,3 +1,9 @@
+# ✈️ YOLOv8 Foreign Object Debris (FOD) Detection
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![YOLOv8](https://img.shields.io/badge/Model-YOLOv8-green)
+![Roboflow](https://img.shields.io/badge/Data-Roboflow-purple)
+
 # yolov8-object-detection
 Object detection pipeline using YOLOv8 and Roboflow. Includes training notebooks and inference scripts.
 
