@@ -24,19 +24,40 @@
 * `copy_yolo_train_roboflow.ipynb` — Jupyter Notebook з повним циклом навчання моделі (від завантаження даних з Roboflow до тренування).
 
 ## 🚀 Як запустити проєкт
+### 🧪 Тестування на прикладі 
 
-Щоб протестувати модель на власному комп'ютері, виконайте наступні кроки:
+Щоб переконатися, що модель працює правильно, ви можете використати моє тестове відео.
 
-### 1. Клонування репозиторію
+1. **Завантажте тестове відео:** 📥 **[Завантажити video_test.mp4]([ПОСИЛАННЯ_НА_ТВОЄ_ВІДЕО](https://youtube.com/shorts/WpaYRwc7CQA))** *(Збережіть його в папку з проєктом)*
+#### 1. Клонування репозиторію
 ```bash
 git clone [https://github.com/kloktadanyil/yolov8-object-detection.git](https://github.com/kloktadanyil/yolov8-object-detection.git)
 cd yolov8-object-detection
 ```
-### 2. Встановлення залежностей
+#### 2. Встановлення залежностей
 ```bash
 pip install ultralytics
 ```
-### 3. Запуск розпізнавання 
+**Підготуйте відео:** Покладіть ваше відео (наприклад, video_test.mp4) у папку з проєктом.
+#### Запустіть команду розпізнавання:
+  Ви можете запустити детекцію однією командою в терміналі:
+
+ ```bash
+ yolo task=detect mode=predict model=best.pt source="video_test.mp4" show=True save=True
+ ```
+### 🧪 Тестування на власному відео 
+Щоб протестувати модель на власному комп'ютері, виконайте наступні кроки:
+
+#### 1. Клонування репозиторію
+```bash
+git clone [https://github.com/kloktadanyil/yolov8-object-detection.git](https://github.com/kloktadanyil/yolov8-object-detection.git)
+cd yolov8-object-detection
+```
+#### 2. Встановлення залежностей
+```bash
+pip install ultralytics
+```
+#### 3. Запуск розпізнавання 
 Створіть файл main.py та вставте туди цей код, щоб запустити детекцію на вашому відео або через веб-камеру:
 ```python
 from ultralytics import YOLO
@@ -49,10 +70,11 @@ model = YOLO("best.pt")
 
 # Варіант 2: Запуск через веб-камеру (0 - ID камери)
 model.predict(source=0, show=True, conf=0.5)
+```
 
 # yolov8-object-detection
 Object detection pipeline using YOLOv8 and Roboflow. Includes training notebooks and inference scripts.
-```
+
 🛠 Технологічний стек
 Модель: YOLOv8 (Ultralytics)
 
