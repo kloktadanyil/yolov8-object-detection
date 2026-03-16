@@ -28,7 +28,7 @@
 **Увага! Всі файли повинно знаходитися в одній папці.**
 #### 1. Клонування репозиторію
 ```bash
-git clone [https://github.com/kloktadanyil/yolov8-object-detection.git](https://github.com/kloktadanyil/yolov8-object-detection.git)
+git clone https://github.com/kloktadanyil/yolov8-object-detection.git
 ```
 ```bash
 cd yolov8-object-detection
