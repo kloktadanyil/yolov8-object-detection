@@ -36,7 +36,7 @@ git clone https://github.com/kloktadanyil/yolov8-object-detection.git
 cd yolov8-object-detection
 ```
 ##### 1.3 Перейдіть до папки
-Створить середовище та активуйте його
+Створіть середовище та активуйте його
 Створення
 ```bash
 python -m venv venv
