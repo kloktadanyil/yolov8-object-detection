@@ -40,7 +40,7 @@ cd yolov8-object-detection
 Створення
 ```bash
 python -m venv venv
-
+```
 Активація (для макбуку)
 ```bash
 source venv/bin/activate
