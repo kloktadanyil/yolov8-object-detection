@@ -30,6 +30,7 @@
 ```bash
 git clone https://github.com/kloktadanyil/yolov8-object-detection.git
 ```
+##### 1.1 Перейдіть до папки
 ```bash
 cd yolov8-object-detection
 ```
