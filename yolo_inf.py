@@ -1,30 +1,33 @@
 import os
 from ultralytics import YOLO
 
-#  НАЛАШТУВАННЯ 
 model_path = "best.pt"
 video_path = "test_video.mp4" 
 
-#  ПЕРЕВІРКА ФАЙЛІВ 
-if not os.path.exists(model_path):
-    print(f"❌ Помилка: Не знайдено файл моделі '{model_path}'")
-    print("Будь ласка, завантажте best.pt у папку з проєктом.")
-    exit()
+def run_inference (modelyolo,video):
+        
 
-if not os.path.exists(video_path):
-    print(f"❌ Помилка: Не знайдено відео '{video_path}'")
-    print("Будь ласка, покладіть тестове відео у папку з проєктом.")
-    exit()
+    # cheking files
+    if not os.path.exists(modelyolo):
+        print(f" Erorr: Dont find the path '{modelyolo}'")
+        print("Please download best.pt in the directory with project.")
+        exit()
+    if not os.path.exists(video):
+        print(f" Erorr: Dont find the path '{video}'")
+        print("Please put the test video in the directory with project.")
+        exit()
+    #starting video processing
+    print(f" Starting the processing '{video}'...")
 
-# ЗАПУСК 
-print(f"🚀 Завантажую модель та починаю обробку '{video_path}'...")
+    try:
+        model = YOLO(modelyolo)
+        results = model.predict(source=video, save=False, conf=0.5, show=True)
 
-try:
-    model = YOLO(model_path)
-    results = model.predict(source=video_path, save=True, conf=0.5, show=True)
+        print("\n Done!")
+        print(f"Results are in in  {results[0].save_dir}")
 
-    print("\n Роботу завершено!")
-    print(f"Результати збережено в папку: {results[0].save_dir}")
+    except Exception as e:
+        print(f"Error {e}")
 
-except Exception as e:
-    print(f"Виникла помилка під час виконання: {e}")
+if __name__ == "__main__":
+    run_inference (model_path,video_path)
