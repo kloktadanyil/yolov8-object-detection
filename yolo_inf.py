@@ -10,7 +10,7 @@ def run_inference (modelyolo,video):
     # cheking files
     if not os.path.exists(modelyolo):
         print(f" Erorr: Dont find the path '{modelyolo}'")
-        print("Please download best.pt in the directory with project.")
+        print("Please download your model in the directory with project.")
         exit()
     if not os.path.exists(video):
         print(f" Erorr: Dont find the path '{video}'")
