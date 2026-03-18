@@ -1,4 +1,4 @@
-# ✈️ YOLOv8 Foreign Object Debris (FOD) Detection
+# YOLOv8 Foreign Object Debris (FOD) Detection
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![YOLOv8](https://img.shields.io/badge/Model-YOLOv8-green)
@@ -8,24 +8,24 @@
 
 Така система може використовуватись для автоматичного моніторингу чистоти поверхонь (наприклад, злітних смуг аеропортів або промислових підлог).
 
-## 🎥 Демонстрація роботи
+## Демонстрація роботи
 
 Модель здатна розпізнавати дрібні об'єкти в реальному часі.
 
 ![Demo Animation](https://github.com/user-attachments/assets/19406a09-835a-48e6-9d72-e2a19e2f309e)
 
-🔴 **[Дивитися повне відео на YouTube](https://youtube.com/shorts/5oNuL0XsUKY)**
+ **[Дивитися повне відео на YouTube](https://youtube.com/shorts/5oNuL0XsUKY)**
 
 ---
 
-## 📂 Структура репозиторію
+##  Структура репозиторію
 
 * `best.pt` — ваги навченої моделі (готової до використання).
 * `copy_yolo_train_roboflow.ipynb` — Jupyter Notebook з повним циклом навчання моделі (від завантаження даних з Roboflow до тренування).
 
-## 🚀 Як запустити проєкт
-### 🧪 Тестування на прикладі 
-**Увага! Всі файли повинно знаходитися в одній папці.**
+##  Як запустити проєкт
+###  Тестування на прикладі 
+**Увага! Всі файли повинні знаходитися в одній папці.**
 #### 1. налаштування середовище
 ##### 1.1 Встановіть репозиторій
 ```bash
@@ -64,16 +64,31 @@ pip install ultralytics opencv-python
  python yolo_inf.py
  ```
 Для зупинки детекції натисніть Cntl+C в терміналі.
-### 🧪 Тестування на власному відео 
+### Тестування на власному відео 
 **Увага!Всі файли повинно знаходитися в одній папці**
 Щоб протестувати модель на власному комп'ютері, виконайте наступні кроки:
 
-#### 1. Клонування репозиторію
+##### 1.1 Встановіть репозиторій
 ```bash
 git clone https://github.com/kloktadanyil/yolov8-object-detection.git
 ```
+##### 1.2 Перейдіть до папки
 ```bash
 cd yolov8-object-detection
+```
+##### 1.3 Перейдіть до папки
+Створіть середовище та активуйте його
+Створення
+```bash
+python -m venv venv
+```
+Активація (для макбуку)
+```bash
+source venv/bin/activate
+```
+Активація (для віндовс)
+```bash
+.\venv\Scripts\Activate.ps1
 ```
 #### 2. Встановлення залежностей
 ```bash
@@ -84,17 +99,19 @@ pip install ultralytics
 ```python
 from ultralytics import YOLO
 
-# Завантаження натренованої моделі
+# your model
 model = YOLO("best.pt")
 
-# Запуск на відеофайлі
+# start detection
 model.predict(source="path/to/your/video.mp4", show=True, conf=0.5)
 ```
+Відео бажано має бути схожим на те що за цим посилання, оскільки модель може не знайти об'єкти.
+ **[Відео на YouTube](https://youtube.com/shorts/5oNuL0XsUKY)**
 
 # yolov8-object-detection
 Object detection pipeline using YOLOv8 and Roboflow. Includes training notebooks and inference scripts.
 
-🛠 Технологічний стек
+Технологічний стек
 Модель: YOLOv8 (Ultralytics)
 
 Мова: Python
