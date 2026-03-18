@@ -106,7 +106,7 @@ model = YOLO("best.pt")
 model.predict(source="path/to/your/video.mp4", show=True, conf=0.5)
 ```
 Відео бажано має бути схожим на те що за цим посилання, оскільки модель може не знайти об'єкти.
- **[Відео на YouTube](https://youtube.com/shorts/5oNuL0XsUKY)**
+**[Відео на YouTube]([https://youtube.com/shorts/5oNuL0XsUKY](https://youtube.com/shorts/WpaYRwc7CQA))**
 
 # yolov8-object-detection
 Object detection pipeline using YOLOv8 and Roboflow. Includes training notebooks and inference scripts.
