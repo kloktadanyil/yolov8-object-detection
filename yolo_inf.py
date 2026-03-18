@@ -17,7 +17,7 @@ def run_inference (modelyolo,video):
         print("Please put the test video in the directory with project.")
         exit()
     #starting video processing
-    print(f" Starting the processing '{video}'...")
+    print(f" Starting the processing '{video}'")
 
     try:
         model = YOLO(modelyolo)
