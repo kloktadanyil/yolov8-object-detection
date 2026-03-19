@@ -20,8 +20,8 @@
 
 ##  Структура репозиторію
 
-* `best.pt` — ваги навченої моделі (готової до використання).
-* `copy_yolo_train_roboflow.ipynb` — Jupyter Notebook з повним циклом навчання моделі (від завантаження даних з Roboflow до тренування).
+* `best8.pt` — ваги навченої моделі 8 версії (готової до використання).
+*  `best11.pt` — ваги навченої моделі 11 версії (готової до використання).
 
 ##  Як запустити проєкт
 ##  Тестування на прикладі 
@@ -100,7 +100,7 @@ pip install ultralytics
 from ultralytics import YOLO
 
 # your model
-model = YOLO("best.pt")
+model = YOLO("best8.pt")
 
 # start detection
 model.predict(source="path/to/your/video.mp4", show=True, conf=0.5)
