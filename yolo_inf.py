@@ -1,7 +1,7 @@
 import os
 from ultralytics import YOLO
 
-model_path = "best.pt"
+model_path = "best8.pt"
 video_path = "test_video.mp4" 
 
 def run_inference (modelyolo,video):
