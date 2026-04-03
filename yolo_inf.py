@@ -6,8 +6,7 @@ video_path = "test_video.mp4"
 
 def run_inference (modelyolo,video):
         
-
-    # cheking files
+    # cheking
     if not os.path.exists(modelyolo):
         print(f" Erorr: Dont find the path '{modelyolo}'")
         print("Please download your model in the directory with project.")
@@ -16,7 +15,7 @@ def run_inference (modelyolo,video):
         print(f" Erorr: Dont find the path '{video}'")
         print("Please put the test video in the directory with project.")
         exit()
-    #starting video processing
+    #video processing
     print(f" Starting the processing '{video}'")
 
     try:
