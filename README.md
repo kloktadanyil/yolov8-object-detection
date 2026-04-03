@@ -18,15 +18,15 @@ The model is capable of recognizing small objects in real-time.
 
 ---
 
-##  Repository Structure
+## Repository Structure
 
 * `best8.pt` — weights of the trained version 8 model (ready to use).
 *  `best11.pt` — weights of the trained version 11 model (ready to use).
 *  `best26.pt` — weights of the trained version 26 model (ready to use).
 *  `yolo_inf.py` - file required to run the detection.
 
-##  How to run the project
-##  Testing on the example 
+## How to run the project
+## Testing on the example 
 **Attention! All files must be located in the same folder.**
 #### 1. Environment setup
 ##### 1.1 Install the repository
