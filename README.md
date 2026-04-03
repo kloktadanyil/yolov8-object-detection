@@ -4,100 +4,104 @@
 ![YOLOv8](https://img.shields.io/badge/Model-YOLOv8-green)
 ![Roboflow](https://img.shields.io/badge/Data-Roboflow-purple)
 
-Цей проєкт демонструє пайплайн для виявлення сторонніх предметів (FOD - Foreign Object Debris) за допомогою комп'ютерного зору. Модель натренована на кастомному датасеті з використанням архітектури **YOLOv8** та платформи **Roboflow**.
+This project demonstrates a pipeline for detecting Foreign Object Debris (FOD) using computer vision. The model is trained on a custom dataset using the **YOLOv8** architecture and the **Roboflow** platform.
 
-Така система може використовуватись для автоматичного моніторингу чистоти поверхонь (наприклад, злітних смуг аеропортів або промислових підлог).
+Such a system can be used for automatic monitoring of surface cleanliness (for example, airport runways or industrial floors).
 
-## Демонстрація роботи
+## Demo
 
-Модель здатна розпізнавати дрібні об'єкти в реальному часі.
+The model is capable of recognizing small objects in real-time.
 
 ![Demo Animation](https://github.com/user-attachments/assets/19406a09-835a-48e6-9d72-e2a19e2f309e)
 
- **[Дивитися повне відео на YouTube](https://youtube.com/shorts/5oNuL0XsUKY)**
+ **[Watch the full video on YouTube](https://youtube.com/shorts/5oNuL0XsUKY)**
 
 ---
 
-##  Структура репозиторію
+##  Repository Structure
 
-* `best8.pt` — ваги навченої моделі 8 версії (готової до використання).
-*  `best11.pt` — ваги навченої моделі 11 версії (готової до використання).
-*  `best26.pt` — ваги навченої моделі 26 версії (готової до використання).
-*  `yolo_inf.py` - файл потрібний для запуску детекції.
+* `best8.pt` — weights of the trained version 8 model (ready to use).
+*  `best11.pt` — weights of the trained version 11 model (ready to use).
+*  `best26.pt` — weights of the trained version 26 model (ready to use).
+*  `yolo_inf.py` - file required to run the detection.
 
-##  Як запустити проєкт
-##  Тестування на прикладі 
-**Увага! Всі файли повинні знаходитися в одній папці.**
-#### 1. налаштування середовище
-##### 1.1 Встановіть репозиторій
+##  How to run the project
+##  Testing on the example 
+**Attention! All files must be located in the same folder.**
+#### 1. Environment setup
+##### 1.1 Install the repository
 ```bash
 git clone https://github.com/kloktadanyil/yolov8-object-detection.git
 ```
-##### 1.2 Перейдіть до папки
+##### 1.2 Move to the directory
 ```bash
 cd yolov8-object-detection
 ```
-##### 1.3 Перейдіть до папки
-Створіть середовище та активуйте його
-Створення
+##### 1.3 Activate the environment
+Create an environment and activate it
+
+Creation
+
 ```bash
 python -m venv venv
 ```
-Активація (для макбуку)
+Activation (for  Mac)
 ```bash
 source venv/bin/activate
 ```
-Активація (для віндовс)
+Activation (for  Windows)
 ```bash
 .\venv\Scripts\Activate.ps1
 ```
-#### 2. Завантажте відео
-Щоб переконатися, що модель працює правильно, ви можете використати моє тестове відео.
-1. **Завантажте тестове відео:** **[Завантажити video_test.mp4](https://youtube.com/shorts/WpaYRwc7CQA)** *(Збережіть його в папку з проєктом)*
+#### 2. Upload video
+To ensure the model works correctly, you can use my test video.
+1. **Download the test video:** **[Download video_test.mp4](https://youtube.com/shorts/WpaYRwc7CQA)** *(Save it to the project folder)*
 
-#### 3. Встановлення залежностей
+#### 3. Installing dependencies
 ```bash
 pip install ultralytics opencv-python
 ```
-**Підготуйте відео:** Покладіть ваше відео (test_video.mp4) у папку з проєктом.
-#### 4 Запустіть  розпізнавання:
-  Ви можете запустити детекцію однією командою в терміналі:
+**Prepare the video:** Put your video (test_video.mp4) in the project directory.
+#### 4. Start inference:
+  You can run the detection with a single command in the terminal:
  ```bash
  python yolo_inf.py
  ```
-Для зупинки детекції натисніть Cntl+C в терміналі.
-## Тестування на власному відео 
-**Увага!Всі файли повинно знаходитися в одній папці**
-Щоб протестувати модель на власному комп'ютері, виконайте наступні кроки:
+To stop detection, press Cntl+C in the terminal.
+## Testing on your own video 
+**Attention! All files must be in the same folder**
+To test the model on your own computer, follow these steps:
 
-##### 1.1 Встановіть репозиторій
+###### 1.1 Install the repository
 ```bash
 git clone https://github.com/kloktadanyil/yolov8-object-detection.git
 ```
-##### 1.2 Перейдіть до папки
+##### 1.2 Move to the directory
 ```bash
 cd yolov8-object-detection
 ```
-##### 1.3 Перейдіть до папки
-Створіть середовище та активуйте його
-Створення
+##### 1.3 Activate the environment
+Create an environment and activate it
+
+Creation
+
 ```bash
 python -m venv venv
 ```
-Активація (для макбуку)
+Activation (for  Mac)
 ```bash
 source venv/bin/activate
 ```
-Активація (для віндовс)
+Activation (for  Windows)
 ```bash
 .\venv\Scripts\Activate.ps1
 ```
-#### 2. Встановлення залежностей
+#### 2. Installing dependencies
 ```bash
 pip install ultralytics
 ```
-#### 3. Запуск розпізнавання 
-Створіть файл main.py та вставте туди цей код, щоб запустити детекцію на вашому відео або через веб-камеру:
+#### 3. Start inference:
+Create a main.py file and paste this code there to run detection on your video or via webcam:
 ```python
 from ultralytics import YOLO
 
@@ -107,17 +111,17 @@ model = YOLO("best8.pt")
 # start detection
 model.predict(source="path/to/your/video.mp4", show=True, conf=0.5)
 ```
-Відео бажано має бути схожим на те що за цим посилання, оскільки модель може не знайти об'єкти.
- **[Відео на YouTube](https://youtube.com/shorts/WpaYRwc7CQA)**
+The video should preferably be similar to the one in this link, as the model may not find the objects.
+**[YouTube Video](https://youtube.com/shorts/WpaYRwc7CQA)**
 
 # yolov8-object-detection
 Object detection pipeline using YOLOv8 and Roboflow. Includes training notebooks and inference scripts.
 
-Технологічний стек
-Модель: YOLOv8 (Ultralytics)
+Technology stack
+Model: YOLOv8 (Ultralytics),YOLOv11 (Ultralytics),YOLOv26 (Ultralytics)
 
-Мова: Python
+Language: Python
 
-Дані: Roboflow (анотація та аугментація)
+Dataset: Roboflow (annotation and augmentation)
 
-Середовище навчання: Google Colab
+Learning environment: Google Colab
