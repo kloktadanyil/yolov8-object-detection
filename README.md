@@ -14,27 +14,26 @@ The model is capable of recognizing small objects in real-time.
 
 ![Demo Animation](https://github.com/user-attachments/assets/19406a09-835a-48e6-9d72-e2a19e2f309e)
 
- **[Watch the full video on YouTube](https://youtube.com/shorts/5oNuL0XsUKY)**
+**[Watch the full video on YouTube](https://youtube.com/shorts/5oNuL0XsUKY)**
 
 ---
 
 ## Repository Structure
 
 * `best8.pt` — weights of the trained version 8 model (ready to use).
-* `best11.pt` — weights of the trained version 11 model (ready to use).
-* `best26.pt` — weights of the trained version 26 model (ready to use).
-* `yolo_inf.py` - file required to run the detection.
+* `best11.pt` — weights of the trained version 11 model (ready to use).
+* `best26.pt` — weights of the trained version 26 model (ready to use).
+* `yolo_inf.py` — script required to run the detection.
   
-## How to run the project
+## How to run the project
 
-## Testing on the example 
+## Testing on the example 
 
 **Attention! All files must be located in the same folder.**
 
 #### 1. Environment setup
 
-##### 1.1 Install the repository
-
+##### 1.1 Clone the repository
 ```bash
 git clone https://github.com/kloktadanyil/yolov8-object-detection.git
 ```
@@ -103,7 +102,7 @@ Activation (for  Windows)
 ```
 #### 2. Installing dependencies
 ```bash
-pip install ultralytics
+pip install ultralytics opencv-python
 ```
 #### 3. Start inference:
 Create a main.py file and paste this code there to run detection on your video or via webcam:
