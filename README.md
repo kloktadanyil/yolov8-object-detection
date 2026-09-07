@@ -14,8 +14,18 @@ The model is capable of recognizing small objects in real-time.
 
 ![Demo Animation](https://github.com/user-attachments/assets/19406a09-835a-48e6-9d72-e2a19e2f309e)
 
-**[Watch the full video on YouTube](https://youtube.com/shorts/5oNuL0XsUKY)**
+📺 **[Watch Ground Demo (Shorts)](https://www.youtube.com/shorts/5oNuL0XsUKY)**
 
+---
+
+### Real-World Field Testing (UAV Deployment)
+
+Following the baseline tests, the detection pipeline was deployed and evaluated on realistic aerial streams:
+
+* **Aerial Drone Evaluation (DJI Mini 4 Pro, 4K UHD):**  
+  The model was tested on native 4K aerial footage captured across variable lighting, angles, and runway surface conditions.  
+  *Current status:* Real-time inference on high-resolution aerial streams is established. Ongoing work focuses on continuous fine-tuning to suppress occasional background noise, refine bounding-box precision on rough textures, and improve overall generalization in upcoming model iterations.  
+  👉 **[Watch 4K Aerial Drone Inference on YouTube](https://youtu.be/CuJ50GNuYPw)**
 ---
 
 ## Repository Structure
