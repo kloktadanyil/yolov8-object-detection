@@ -1,4 +1,4 @@
-# YOLOv8 Foreign Object Debris (FOD) Detection
+# YOLO Foreign Object Debris (FOD) Detection
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![YOLOv8](https://img.shields.io/badge/Model-YOLOv8-green)
